@@ -1,0 +1,1427 @@
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color:#F3F4F4;
+
+}
+.navbar-hidden{
+    display: none;
+}
+.navbar {
+    position: absolute;
+    height: 80;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-toggle{
+    background-color: black;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 1.7em;
+    margin-right: 52px;
+    margin-left: 80px;
+}
+.search{
+    padding-left: 2.4em;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+#LoGo {
+    margin-top: 7px;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 218px;
+    height: auto;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    background: url(Pics/Main.png) no-repeat center center/cover;
+    height: 88vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(206, 204, 204, 0.885); /* Dark overlay */
+    z-index: 1; /* Below text and button */
+}
+
+.overlay h1{
+    margin-top: -70px;
+    font-family: Canela Web;
+    font-size: 140px;
+    letter-spacing: -4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.overlay p{
+    font-family: GT America Standard Regular;
+    margin-top: -70px;
+    width: 40%;
+    line-height: 1.5;
+    font-size: 21px;
+   
+}
+
+.container {
+    margin-top: 180px;
+    margin-left: 105px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+}
+
+.image-section {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section h1 {
+    font-family: Canela Web;
+    font-size: 48px;
+    margin-top: 50px;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    letter-spacing: 1.1;
+    color: #555;
+    margin-top: 0px;
+}
+
+.before{
+    font-size: 0.9rem;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+.learn-more {
+    font-weight: 600;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #555;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.learn-more span {
+
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #555;
+    border-bottom: 2px solid #555;
+    transform: rotate(-45deg);
+}
+
+.learn-more:hover {
+    color: #333;
+}
+
+.motivation-container {
+    margin-left: 100px;
+    margin-top: 200px;
+    display: flex;
+}
+.motivation-text-section {
+    flex: 1;
+    padding: 20px;
+}
+.motivation-text-section h1 {
+    font-family: Canela Web;
+    width: 100%;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.motivation-text-section p {
+    margin: 20px 0;
+    font-size: 1em;
+}
+.motivation-podcast {
+    max-width: 200px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: -10px;
+}
+.motivation-text-section a {
+    display: inline-block;
+    margin-top: 50px;
+    text-decoration: none;
+    color: #0c0c0c;
+    font-weight: bold;
+}
+.motivation-image-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    padding-right: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.robert{
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+.motivation-container span{
+    margin-top: 140px;
+}
+#robert{
+    width: 100%;
+}
+#podcast{
+    width: 300%;
+}
+
+
+  
+  .quote-box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .quote-text {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .quote-author {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .audio-icon {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .profile-picture {
+    margin-top: 20px;
+  }
+  
+  .profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  .online-course-section {
+    margin-top: 110px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #F3F4F4;
+    padding: 20px;
+  }
+  .online-course-section h1{
+    font-size: 45px;
+  }
+  .online-course-section p{
+    font-size: 20px;
+  }
+  .left-content {
+    flex: 1; /* Allocate space for left content */
+  }
+  
+  .right-content {
+    flex: 1; /* Allocate space for right content */
+    display: flex;
+    flex-direction: column; /* Stack text and button vertically */
+    align-items: flex-start; /* Align content to the left within right section */
+  }
+  
+  .course-title {
+    font-family: 'Georgia', serif; /* Serif font */
+    font-size: 2rem; /* Adjust font size */
+    font-weight: bold;
+    margin: 0;
+    color: #000; /* Black text */
+  }
+  
+  .course-description {
+    font-family: 'Arial', sans-serif; /* Sans-serif font */
+    font-size: 1rem;
+    color: #555; /* Gray text */
+    margin: 0 0 10px 0; /* Bottom margin for spacing */
+  }
+  
+  .course-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #000; /* Black text */
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .course-link .arrow-icon {
+    display: inline-block;
+    background-color: #6c757d; /* Dark gray */
+    color: #fff; /* White arrow */
+    font-size: 1.2rem;
+    font-weight: normal;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 8px;
+  }
+  
+  .course-link:hover {
+    text-decoration: underline;
+  }
+  
+  .courses-wrapper {
+    margin: 80px 20px;
+  }
+
+  .cards-row {
+    display: flex;
+    margin-top: 30px;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    width: 450px;
+    overflow: hidden;
+    background-color: #8888881a;
+   
+  }
+  
+  .course-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .course-details {
+    margin-top: 30px ;
+    padding: 16px;
+  }
+
+  .course-details h2 {
+   font-size: 40px;
+  }
+
+  .course-label {
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #3e3e3e;
+    margin-bottom: 12px;
+  }
+  
+  .course-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 8px;
+  }
+  
+  .course-summary {
+    font-size: 1.2em;
+    color: #424242;
+    margin: 0 0 16px;
+  }
+  
+  .course-status {
+    margin-bottom: 20px;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .status-dot {
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #28a745;
+  }
+  
+  .status-availability {
+    font-size: 1em;
+    color: #333;
+  }
+  .mental-health-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #f4f3f3;
+    padding: 20px;
+  }
+  .mental-health-section_2 {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #f4f3f3;
+    padding: 20px;
+  }
+  
+  .left-column {
+    flex: 1;
+  }
+  
+  .right-column {
+    width: 100%;
+    flex: 1;
+  }
+  
+  .main-heading {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .description {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more-link {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more-link .arrow-icon {
+    display: inline-block;
+    background-color: #6c757d;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 8px;
+  }
+  
+  .learn-more-link:hover {
+    text-decoration: underline;
+  }
+  
+  .mental-health-image {
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .exercise-heading {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .exercise-steps {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .exercise-steps li {
+    margin-bottom: 20px;
+  }
+  
+  .step-title {
+    font-family: 'Georgia', serif;
+    font-size: 2.8rem;
+    color: #bb0303; /* Deep red */
+    font-weight: 400;
+  }
+  
+  .exercise-steps p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0 0 0;
+    line-height: 1.5;
+  }
+
+  .left-column{
+    margin-left: 100px;
+  }
+
+  .recommendations-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 80px;
+}
+
+
+
+.recommendation-card {
+    position: relative;
+    width: 360px;
+    height: 500px;
+    background: url('Pics/News1.png') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.recommendation-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7));
+}
+
+.recommendation-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.recommendation-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.recommendation-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.recommendation-link:hover {
+    background-color: white;
+    color: black;
+}
+.podcast-container {
+    font-family: 'Canela Deck Web';
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .podcast-header {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .podcast-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    justify-content: space-between;
+  }
+  
+  .podcast-image {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    border-radius: 8px;
+    background-color: #eee;
+  }
+  
+  .podcast-details {
+    flex: 1;
+  }
+  
+  .podcast-title {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+  }
+  
+  .podcast-source {
+    font-size: 17px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .podcast-description {
+   text-align: right;
+    font-size: 19px;
+    color: #444;
+    margin: 10px 0 0;
+  }
+  .custom-header-wrapper {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between; /* Ensures the left and right text are aligned on opposite sides */
+    align-items: center; /* Vertically centers the text */
+    margin-bottom: 30px;
+  }
+  
+  .custom-header-left {
+    font-size: 62px; /* Left heading font size */
+    font-weight: bold; /* Makes the text bold */
+    margin: 0; /* Removes any default margin */
+  }
+  
+  .custom-header-right {
+    margin-top: -60px;
+    font-size: 21px; /* Right description font size */
+    text-align: left; /* Aligns text to the right */
+    color: #666; /* Gray text color */
+  }
+
+  .custom-backdrop {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url(Pics/last_finally.jpeg); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.866);
+}
+
+.custom-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 400px;
+    align-items: left;
+    width: 100%;
+    max-width: 1400px;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.custom-content-left {
+    text-align: left;
+}
+
+.custom-content-left h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.custom-content-left h1 {
+    font-family: 'Candela Deck Web';
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.custom-content-right {
+    text-align: left;
+}
+
+.custom-content-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-content-right li {
+    width: 400px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.custom-content-right li::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.214);
+    margin-top: 5px;
+}
+.footer-container {
+    background-color: #000;
+    color: #fff;
+    height: 456px; /* Fixed height */
+    padding: 40px 30px; /* Added padding for content from top and bottom */
+    box-sizing: border-box; /* Includes padding in height calculation */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-sections {
+    display: flex;
+    justify-content: center;
+    gap: 130px; /* Adjusted spacing */
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column h3 {
+    font-size: 24px; /* Increased size */
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .footer-column a {
+    color: #8996A0;
+    text-decoration: none;
+    font-size: 18px; /* Increased size */
+    display: block;
+    margin-bottom: 19px;
+  }
+
+  .footer-column a:hover {
+    color: #fff;
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .copyright {
+    margin-left: 200px;
+    font-size: 16px;
+    color: #8996A0;
+    max-width: 400px; /* Ensures wrapping */
+    line-height: 1.4;
+  }
+
+  .footer-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-logo img {
+    margin-top: -80px;
+    max-height:100px; /* Adjusted size */
+  }
+
+  .social-icons {
+    display: flex;
+    width: 600px;
+    gap: 10px; /* Increased spacing */
+  }
+
+  .social-icons img {
+    width: 15%;
+    color: #fff;
+    font-size: 1px; /* Increased icon size */
+    text-decoration: none;
+  }
+
+  
+.hero-section {
+    background: url('body-1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+.homepage-buttons{
+    filter: invert(1);
+ width: 30px;
+ height: 30px;
+}
+.overlay {
+    background: rgba(109, 107, 107, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:40%;
+    align-items: center;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    padding-left: 15px;
+    height: 100px;
+    margin-right: 200px;
+}
+
+.header-actions a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* resolution-section code start here  */
+
+.resolution-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1ebeb; 
+    padding: 50px 20px;
+  }
+  
+  .resolution-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 40px; 
+  }
+  
+  .resolution-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+  }
+  
+  .resolution-content {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .pre-heading {
+    font-size: 14px;
+    color: #a0a0a0; 
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .resolution-content h2 {
+    font-size: 32px;
+    color: #333; 
+    margin: 0 0 20px;
+    line-height: 1.4;
+  }
+  
+  .resolution-content p {
+    font-size: 16px;
+    color: #666; 
+    margin: 0 0 20px;
+  }
+  
+  .resolution-link {
+    font-size: 16px;
+    color: #A51C30; 
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .resolution-link:hover {
+    text-decoration: underline;
+  }
+  .section2-img{
+    width: 50%;
+  }
+  .resolution-image{
+    width: 50%;
+    height: 70%;
+  }
+  
+  /* motivation-section code starts here  */
+
+  .motivation-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .quote-container {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .quote-container blockquote {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin: 0 0 20px;
+    line-height: 1.5;
+    position: relative;
+  }
+  
+  .quote-container blockquote:before {
+    content: "“";
+    font-size: 3rem;
+    color: #d92b27;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+  
+  .quote-container blockquote:after {
+    content: "”";
+    font-size: 3rem;
+    color: #d92b27;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+  }
+  
+  .quote-container .author {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .audio-placeholder {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .image-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /* cards section code starts here  */
+
+  .card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-tag {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 8px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 8px;
+  }
+  
+  .card-description {
+    font-size: 0.95em;
+    color: #555;
+    margin: 0 0 16px;
+  }
+  
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #28a745; 
+  }
+  
+  .status-text {
+    font-size: 0.9em;
+    color: #333;
+  }
+  .cards-container{
+    padding-top: 30px;
+    display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+  }
+
+  /* mental health section code start from here  */
+
+  .mental-health-section {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .text-content {
+    flex: 1 1 45%;
+    padding: 20px;
+  }
+  
+  .text-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .text-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .text-content .learn-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .exercise-container {
+    flex: 1 1 45%;
+    padding: 20px;
+  }
+  
+  .exercise-container h2 {
+    font-size: 1.8em;
+    color: #222;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  
+  .exercise-steps {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .exercise-steps li {
+    margin-bottom: 15px;
+  }
+  
+  .exercise-steps li strong {
+    color: #a51c30; 
+    font-size: 1.2em;
+  }
+  
+  .image-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    height: 50vh;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  /* card container 2 section starts here  */
+  
+  .book-card {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background-image: url('Pics/2_P.png'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    color: black;
+  }
+  
+  .book-card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .book-title {
+    color: #222;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .book-subtitle {
+    color: #222;
+    font-size: 16px;
+    margin: 5px 0 15px;
+  }
+  
+  .book-recommendation {
+    color: #222;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .book-explore-button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .book-explore-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #222;
+  }
+  
+  .card-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 40px;  
+  }
+
+  .namemain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }  
+  .namemain .left{
+    width: 40%;
+    height: 29vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .namemain .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 29vh;
+  }
+
+  /* paralell cards code start here  */
+
+  .container {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.text-section {
+    max-width: 60%;
+}
+
+.text-section h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.text-section p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.text-section .description {
+    font-size: 14px;
+    color: #999;
+}
+
+.image-section img {
+    max-width: 60px;
+    height: auto;
+    display: block;
+}
+
+/* last section code starts here  */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.related-topics-section {
+  background-image: url('background-image.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: left;
+  color: #000;
+  position: relative;
+}
+
+.related-topics-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Overlay effect */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sub-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: 36px;
+  margin: 0;
+  color: #000;
+  font-weight: bold;
+}
+
+.topics-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.topics-list li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.topics-list li:hover {
+  color: #000;
+  border-color: #000;
+}
+
+/* here is the code for the footer  */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+
+.footer-branding p {
+  font-size: 15px;
+  color: #bbb;
+  margin: 0;
+}
+
+.social-icons {
+  flex: 1;
+  text-align: right;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-column {
+      margin: 20px 0;
+      text-align: center;
+  }
+
+  .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-branding {
+      margin-bottom: 20px;
+  }
+
+  .social-icons {
+      justify-content: center;
+  }
+
+  .social-icons a {
+      margin: 0 5px;
+  }
+  .resolution-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container2{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards-container{
+    display: flex;
+    flex-direction: column;
+  }
